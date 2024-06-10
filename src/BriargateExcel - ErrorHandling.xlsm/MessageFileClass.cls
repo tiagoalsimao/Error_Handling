@@ -142,7 +142,7 @@ Private Sub CreateMessageStream( _
     Set FSO = New FileSystemObject
     
     Dim DF As String
-    DF = DesktopFolder
+    DF = DesktopFolder.DesktopFolder
     
     This.MessageFolderPath = DF & Application.PathSeparator & FolderName
     

@@ -1,3 +1,8 @@
+Attribute VB_Name = "MainProgramTemplate"
+Option Explicit
+
+Private Const Module_Name As String = "MainProgramTemplate."
+
 Public Sub MainProgram()
 
     ' Used as the top level routine
@@ -16,13 +21,13 @@ Halted:
     MsgBox "Abnormal exit"
 Done2:
     CloseErrorFile
-    TurnOnAutomaticProcessing
+    'TurnOnAutomaticProcessing
     Exit Sub
 ErrorHandler:
     ReportError "Exception raised", _
                 "Routine", RoutineName, _
                 "Error Number", Err.Number, _
                 "Error Description", Err.Description
-    TurnOnAutomaticProcessing
+    'TurnOnAutomaticProcessing
     CloseErrorFile
 End Sub ' MainProgram

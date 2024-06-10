@@ -1,3 +1,8 @@
+Attribute VB_Name = "SubTemplate"
+Option Explicit
+
+Private Const Module_Name As String = "SubTemplate."
+
 Private Sub SubTemplate()
 
     ' Used for lower level routines
